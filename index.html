@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h2 {
+            margin-top: 30px;
+            font-size: 24px;
+        }
+        #response {
+            font-size: 18px;
+            color: #333;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ask the pdf related question!</h1>
+    
+    <div class="container">
+        <form id="query-form">
+            <label for="input-text">Enter your question:</label>
+            <input type="text" id="input-text" name="input_text" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Response:</h2>
+        <p id="response"></p>
+    </div>
+
+    <script>
+        document.getElementById('query-form').addEventListener('submit', async function(event) {
+            event.preventDefault();  // Prevent the default form submission
+            const inputText = document.getElementById('input-text').value;  // Get the input text value
+
+            // Send input text to the Flask backend for processing
+            const response = await fetch('/generate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ input_text: inputText })
+            });
+
+            const data = await response.json();  // Parse the response JSON
+
+            // Display the AI response in the 'response' paragraph
+            document.getElementById('response').textContent = data.response || data.error;
+        });
+    </script>
+
+</body>
+</html>
