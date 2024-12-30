@@ -1,5 +1,7 @@
 # MediChat: AI-Driven Medical Information Assistant
 
+[DATASET](https://github.com/harshachelluri/MediChat-AI-Driven-Medical-Information-Assistant/blob/main/Patient%20Information.pdf)
+
 **MediChat** is an AI-powered chatbot designed to assist healthcare professionals by providing instant, personalized patient information. The chatbot integrates **Google Gemini** for generative AI responses and **Retrieval-Augmented Generation (RAG)** for context-aware, real-time information retrieval from medical records.
 
 ## Key Features:
