@@ -37,4 +37,6 @@ Healthcare professionals can query the system for detailed patient information:
 
 **Response**: "Patient Rajesh Kumar (ID 1001), admitted on January 5, 2024, is currently experiencing shortness of breath and chest discomfort, likely due to an asthma exacerbation. His medical history includes hypertension and asthma, and he is currently on Atenolol and Salbutamol. The treatment plan involves nebulized bronchodilators, steroid therapy, and blood pressure monitoring."
 
+
+ 
 **MediChat** is an innovative solution aimed at improving healthcare delivery by making patient data easily accessible through AI-powered, real-time responses. The integration of generative AI, machine learning, and document retrieval ensures high accuracy and efficiency in managing medical information.
