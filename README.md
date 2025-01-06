@@ -40,3 +40,8 @@ Healthcare professionals can query the system for detailed patient information:
 
  
 **MediChat** is an innovative solution aimed at improving healthcare delivery by making patient data easily accessible through AI-powered, real-time responses. The integration of generative AI, machine learning, and document retrieval ensures high accuracy and efficiency in managing medical information.
+
+
+
+![Screenshot 2024-12-30 193439](https://github.com/user-attachments/assets/8b6bd810-bd47-4dcc-a81d-e772726b0a9e)
+
