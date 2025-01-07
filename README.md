@@ -21,8 +21,6 @@
 - **Data Retrieval & Vector Databases**: Experience with **FAISS** and **RAG** architecture.
 - **Programming**: Proficiency in **Python**, **Flask**, and web technologies (**HTML**, **CSS**, **JavaScript**).
 - **Machine Learning Frameworks**: Familiarity with **HuggingFace** and **LangChain**.
-- **Cloud & API Integration**: Experience with cloud platforms and API integration.
-- **Version Control**: Familiarity with **Git** for code management.
 
 ## How It Works:
 1. **Document Processing**: Patient records are loaded and split into chunks using **LangChain**.
