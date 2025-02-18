@@ -1,4 +1,4 @@
-# MediChat: AI-Driven Medical Information Assistant
+# MediChat: AI-Driven Medical Information Assistant      
 
 [DATASET](https://github.com/harshachelluri/MediChat-AI-Driven-Medical-Information-Assistant/blob/main/Patient%20Information.pdf)
 
